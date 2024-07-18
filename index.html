@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rythm - Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="website icon" href="./images/RYTHM.png">
+</head>
+<body>
+    <!-- <script src=""></script> --> 
+    <div class="container flex">
+        <div class="left m-5 p-5">
+            <img class="invert close hidden" src="./images/close.svg" alt="close">
+            <div class="home  rounded m-5 p-10">
+                <div class="logo">
+                    <img class="invert" src="./images/logo.png" alt="Logo">
+                </div>
+                <ul>
+                    <li class="m-10 cursor"><img class="invert" src="./images/home.svg" alt="Home">Home</li>
+                    <li class="m-10 cursor"><img class="invert" src="./images/search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library  rounded m-5 p-10">
+                <div class="heading flex">
+                    <div class="heading-left flex">
+                        <img class="invert" src="./images/library.svg" alt="library">
+                        <p>Your Library</p>
+                    </div>
+                    <!-- <div class="heading-right cursor">
+                        <img class="invert" src="./images/plus.svg" alt="Add">
+                    </div> -->
+                </div>
+                <div class="songContent m-10">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="right-header flex align-center">
+                <div class="nav m-10 cursor flex">
+                    <img class="invert hamburger" src="./images/hamburger.svg" alt="Hamburger">
+                    <img class="invert day cursor" src="./images/moon.png" alt="Day">
+                </div>
+                <div class="buttons">
+                    <button id="signup" class="cursor">Sign up</button>
+                    <button id="login" class="cursor">Log in</button>
+                </div>
+            </div>
+            <div class="playlists p-10">
+                <h3>Popular Playlists</h3>
+                <div class="cardContainer flex">
+
+                </div>
+            </div>
+            <div class="playbar">
+                <div>
+                    <input type="range" class="seekbar" id="seekbar" min="0" max="100" value="0">
+                </div>
+                <div class="otherInfo flex">
+                    <div class="songInfo">
+                        
+                    </div>
+                    <div class="songButtons flex justify-center">
+                        <img class="cursor" id="previous" src="./images/previousSong.svg" alt="Previous" style="width: 30px;">
+                        <img class="cursor" id="play" src="./images/playSong.svg" alt="Play" style="width: 30px;">
+                        <img class="cursor" id="next" src="./images/nextSong.svg" alt="Next" style="width: 30px;">
+                    </div>
+                    <div class="right-otherInfo">
+                        <div class="songTime">
+                            
+                        </div>
+                        <div class="volumeContainer">
+                            <img class="volume invert cursor" src="./images/volume.svg" alt="Volume">
+                            <input type="range" class="volRange" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
